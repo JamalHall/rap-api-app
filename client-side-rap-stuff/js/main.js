@@ -1,4 +1,3 @@
-alert('js file loaded')
 //event listener added to button
 document.querySelector('button').addEventListener('click', getRapName)
 
