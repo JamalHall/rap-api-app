@@ -1,7 +1,7 @@
 const express = require('express') // must put in quotes or it will look for a variable called express
 const cors = require('cors')
 const app = express()  // puts all functions that are in express in a variable called app
-const PORT = 8000 // port set as a variable to enhance readability
+const PORT = process.env.PORT || 8000 // port set as a variable to enhance readability
 
 app.use(cors())  // remember express is sitting in the app variable  cors is a method so type cors()
 
